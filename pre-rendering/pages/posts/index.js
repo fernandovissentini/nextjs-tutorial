@@ -23,7 +23,7 @@ export async function getStaticProps() {
   const postsData = await resp.json()
   return {
     props: {
-      posts: postsData.slice(0, 3)
+      posts: postsData
     }
   }
 }
