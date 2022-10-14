@@ -1,4 +1,12 @@
+import {useRouter} from "next/router";
+
 function PostDetail({post}) {
+
+  const router = useRouter()
+  if(router.isFallback) {
+    return <h1>Loading...</h1>
+  }
+
   return <>
     <h1>Post Details for {post.title}</h1>
     <h2>{post.id}</h2>
@@ -28,7 +36,7 @@ export async function getStaticPaths() {
       }
     ],
     // paths,
-    fallback: 'blocking'
+    fallback: true
   }
 }
 

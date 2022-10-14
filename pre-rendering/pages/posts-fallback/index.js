@@ -7,7 +7,7 @@ function PostList({posts}) {
       posts.map(post => {
         return (
             <div key={post.id}>
-              <Link href={`posts-blocking/${post.id}`} passHref>
+              <Link href={`posts-fallback/${post.id}`} passHref>
                 <h2>{post.id} {post.title}</h2>
               </Link>
               <hr/>
