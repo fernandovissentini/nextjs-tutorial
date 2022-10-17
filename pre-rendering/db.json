@@ -1,4 +1,10 @@
 {
+  "dashboard": {
+    "posts": 5,
+    "likes": 100,
+    "followers": 20,
+    "following": 50
+  },
   "products": [
     {
       "id": 1,
@@ -17,6 +23,26 @@
       "title": "Product title 3",
       "price": 3000,
       "description": "Product description 3"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "Title News 1",
+      "description": "This is the description for the News 1",
+      "category": "sports"
+    },
+    {
+      "id": 2,
+      "title": "Title News 2",
+      "description": "This is the description for the News 2",
+      "category": "politics"
+    },
+    {
+      "id": 3,
+      "title": "Title News 3",
+      "description": "This is the description for the News 3",
+      "category": "sports"
     }
   ]
 }
