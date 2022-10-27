@@ -13,6 +13,14 @@ export default function handler(req, res) {
         (comment => comment.id === parseInt(commentId)))
     comments.splice(index, 1)
     res.status(200).json(deletedComment)
+  } else if (req.method === 'PUT') {
+    const updatedComment = comments.map(
+        (comment) => {
+          if (comment.id === parseInt(commentId)) {
+            comment.text = req.body.comment
+          }
+        })
+    res.status(200).json(updatedComment)
   }
 
 }
