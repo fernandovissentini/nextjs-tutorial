@@ -44,7 +44,7 @@ function Navbar() {
                     <Link href='/api/auth/signout' legacyBehavior>
                       <a onClick={e => {
                         e.preventDefault()
-                        signOut()
+                        signOut({callbackUrl: '/'})
                       }}>Sign Out</a>
                     </Link>
                   </li>
